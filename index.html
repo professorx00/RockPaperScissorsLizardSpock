@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors Lizard Spock</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/c2231930f2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 m-0 p-0" id="totals">
+                    <div class="wins card bg-success">
+                        <div class="card-header">
+                            Wins:
+                        </div>
+                        <div id="win">
+                            0
+                        </div>
+                    </div>
+                    <div class="lost card bg-danger">
+                        <div class="card-header">
+                            Losses:
+                        </div>
+                        <div id="lost">
+                            0
+                        </div>
+                    </div>
+                    <div class="tie card bg-warning">
+                        <div class="card-header">
+                                Ties:
+                            </div>
+                            <div id="tie">
+                                0
+                            </div>
+                    </div>
+                </div>
+                <div class="col-9" id="gameArea">
+                    <div class="row">
+                        <span class="" id="title">Rock Paper Scissors Lizard Spock</span>
+                    </div>
+                    <div class="row">
+                        <div class="gameBtns">
+                            <button class="btn gameBtn" id="rock" data-btn="3"><i class="fas fa-fist-raised"></i>Rock</button>
+                            <button class="btn gameBtn" id="paper" data-btn="2"><i class="fas fa-hand-paper"></i>Paper</button>
+                            <button class="btn gameBtn" id="Scissors" data-btn="1"><i class="fas fa-hand-scissors"></i>Scissors</button>
+                            <button class="btn gameBtn" id="Lizard" data-btn="4"><i class="fas fa-hand-lizard"></i>Lizard</button>
+                            <button class="btn gameBtn" id="Spock" data-btn="5"><i class="fas fa-hand-spock"></i>Spock</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="resultsHistory">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/game.js"></script>
+</body>
+
+</html>
